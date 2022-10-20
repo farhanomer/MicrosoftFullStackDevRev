@@ -13,7 +13,7 @@
 
             PermanentEmployee pEmployee = new PermanentEmployee();
             pEmployee.Experience = 5;
-            pEmployee.CalculateSalary();
+            pEmployee.CalculateSalary();            
             Console.ReadLine();
 
         }
