@@ -13,6 +13,8 @@
 
             PermanentEmployee pEmployee = new PermanentEmployee();
             pEmployee.Experience = 5;
+
+            // CalculateSalary() Method is not in present in PermanentEmployee Class, but it will inherit automatically from it Paremy
             pEmployee.CalculateSalary();
             Console.ReadLine();
 
@@ -51,6 +53,9 @@
 
 
 
+        /// <summary>
+        /// Base/Parent/Super Class
+        /// </summary>
         public class Employee
         {
 
@@ -81,8 +86,17 @@
 
         }
 
+        /// <summary>
+        /// Derived/Child/Sub Class
+        /// </summary>
         public class PermanentEmployee : Employee
         {
+
+        }
+
+        public class ContractEmployee : Employee
+        {
+
 
         }
 
