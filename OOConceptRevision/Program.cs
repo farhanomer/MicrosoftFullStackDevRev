@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-            
+
             Employee objEmployee = new Employee();
             objEmployee.Experience = 3;
             objEmployee.CalculateSalary();
@@ -13,7 +13,7 @@
 
             PermanentEmployee pEmployee = new PermanentEmployee();
             pEmployee.Experience = 5;
-            pEmployee.CalculateSalary();            
+            pEmployee.CalculateSalary();
             Console.ReadLine();
 
 
@@ -37,9 +37,11 @@
 
         }
 
-        public class Shape : InterfaceStaticMethodDemo {
+        public class Shape : InterfaceStaticMethodDemo
+        {
 
-            public Shape() {
+            public Shape()
+            {
                 Console.WriteLine("From Shape Constructor ");
             }
 
@@ -52,17 +54,20 @@
         public class Employee
         {
 
-            public Employee(){
+            public Employee()
+            {
             }
 
             private int experience;
 
-            public int Experience 
+            public int Experience
             {
-                get 
-                { return experience;
+                get
+                {
+                    return experience;
                 }
-                set {
+                set
+                {
                     experience = value;
                 }
             }
@@ -72,16 +77,16 @@
                 int salary = Experience * 10;
                 Console.WriteLine("salary:{0}", salary);
             }
-      
+
 
         }
 
-        public class PermanentEmployee: Employee
+        public class PermanentEmployee : Employee
         {
 
         }
-   
-    
+
+
 
 
     }
