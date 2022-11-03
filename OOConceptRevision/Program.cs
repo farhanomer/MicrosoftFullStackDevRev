@@ -14,7 +14,7 @@
             PermanentEmployee pEmployee = new PermanentEmployee();
             pEmployee.Experience = 5;
 
-            // CalculateSalary() Method is not in present in PermanentEmployee Class, but it will inherit automatically from it Paremy
+            // CalculateSalary() Method is not in present in PermanentEmployee Class, but it will inherit automatically from it Parent
             pEmployee.CalculateSalary();
             Console.ReadLine();
 
@@ -22,6 +22,18 @@
 
             //Interface Invoking Method
             InterfaceStaticMethodDemo.InterfaceStaticMethod();
+
+            //Single Inheritance
+            //Forest objForest = new Forest();
+            //objForest.Animal();
+
+            //Jungle objJungle = new Jungle();
+            //objJungle.Animal();
+            //objJungle.Dog();
+
+
+            Forest objForest2 = new Jungle();
+            objForest2.Animal();
 
         }
 
@@ -99,6 +111,34 @@
 
 
         }
+
+        public class Forest
+        {
+            public virtual void Animal()
+            {
+                Console.WriteLine("Animal From Forest");
+            }
+
+        }
+        public class Jungle : Forest
+        {
+
+            public void Dog()
+            {
+
+                Console.WriteLine("Dog from Jungle");
+
+            }
+
+            public override void Animal()
+            {
+
+                Console.WriteLine("Animal  from Jungle");
+            }
+
+
+        }
+
 
 
 
