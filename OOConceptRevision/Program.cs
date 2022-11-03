@@ -16,6 +16,18 @@
             pEmployee.CalculateSalary();            
             Console.ReadLine();
 
+            InterfaceStaticMethodDemo.InterfaceStaticMethod();
+
+        }
+
+        interface InterfaceStaticMethodDemo
+        {
+            static void InterfaceStaticMethod()
+            {
+                Console.WriteLine("TEST STATIC METHOD IN INTERFACE");
+
+            }
+
         }
 
 
@@ -50,6 +62,8 @@
         {
 
         }
+   
+    
 
 
     }
