@@ -159,6 +159,14 @@
 
         }
 
+        //public sealed class PreventInheritance
+        //{
+
+        //}
+        //public class TryInheritSealedClass : PreventInheritance
+        //{
+
+        //}
 
 
 
