@@ -11,6 +11,7 @@
             objEmployee.CalculateSalary();
             Console.ReadLine();
 
+
             PermanentEmployee pEmployee = new PermanentEmployee();
             pEmployee.Experience = 5;
 
@@ -24,16 +25,35 @@
             InterfaceStaticMethodDemo.InterfaceStaticMethod();
 
             //Single Inheritance
-            //Forest objForest = new Forest();
-            //objForest.Animal();
+            Forest objForest = new Forest();
+            objForest.Animal();
 
-            //Jungle objJungle = new Jungle();
-            //objJungle.Animal();
-            //objJungle.Dog();
+            Jungle objJungle = new Jungle();
+            objJungle.Animal();
+            objJungle.Dog();
 
 
+            Forest objForest1 = new Jungle();
+            objForest1.Animal();
+
+            // Explicit Conversion from Parent to Child
+            // Will Through Casting Error because it violates OOP rules
+
+            // Child Variable Cannot hold Parent Variable
+            Jungle objJungle1 = (Jungle)new Forest();
+
+            objJungle1.Dog();
+            objJungle1.Animal();
+
+
+            //Parent Variable Can hold Child Variable
             Forest objForest2 = new Jungle();
+
             objForest2.Animal();
+
+
+
+
 
         }
 
