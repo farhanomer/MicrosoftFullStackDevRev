@@ -16,9 +16,16 @@
             pEmployee.CalculateSalary();            
             Console.ReadLine();
 
+
+
+            //Interface Invoking Method
             InterfaceStaticMethodDemo.InterfaceStaticMethod();
 
         }
+
+        /// <summary>
+        ///  Interface with Static Method
+        /// </summary>
 
         interface InterfaceStaticMethodDemo
         {
@@ -30,10 +37,21 @@
 
         }
 
+        public class Shape : InterfaceStaticMethodDemo {
+
+            public Shape() {
+                Console.WriteLine("From Shape Constructor ");
+            }
+
+
+
+        }
+
 
 
         public class Employee
         {
+
             public Employee(){
             }
 
@@ -54,7 +72,7 @@
                 int salary = Experience * 10;
                 Console.WriteLine("salary:{0}", salary);
             }
-
+      
 
         }
 
