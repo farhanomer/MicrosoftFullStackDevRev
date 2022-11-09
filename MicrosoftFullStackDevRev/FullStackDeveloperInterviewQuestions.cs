@@ -1,4 +1,4 @@
-﻿namespace OOConceptRevision
+﻿namespace FullStackMicrosoftDevRev
 {
     internal class OOPSQuestions
     {
