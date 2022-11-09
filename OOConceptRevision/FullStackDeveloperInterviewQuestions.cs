@@ -20,8 +20,8 @@
     internal class SQLQuestions
     {
         // How to select all Column in Customer Table
-        // How to join  tables?
-        // Select * from  Customer C 
+        // How to join Customer and Address  tables?
+
 
 
 
