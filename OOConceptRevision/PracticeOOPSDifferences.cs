@@ -1,6 +1,6 @@
 ﻿namespace OOConceptRevision
 {
-    internal class PracticeOOPSDifferences
+    internal class OOPSQuestions
     {
         // What is difference between Class And Object?
         // What is difference between Abstract and Interface?
@@ -20,7 +20,19 @@
     internal class SQLQuestions
     {
         // How to select all Column in Customer Table
-        // How to join  tables
+        // How to join  tables?
+        // Select * from  Customer C 
+
+
+
+
+    }
+    internal class JavascriptQuestions
+    {
+        //What is difference between "==" equal
+        //What is truthyness in Javascript?
+        //What is Promises?
+        //What are advantage of using Arrow function?
 
 
 
